@@ -1,0 +1,37 @@
+﻿h1. top
+
+h2. 2nd level
+
+|a|b|
+|c|d|
+
+* test
+** test2
+* test3
+
+# test1
+## test1-1
+### test1-1-1
+### test1-1-2
+## test 1-2
+# test2
+## test2-1
+
+* u1
+# o1
+* u2
+# o2
+
+書き方で回避
+→だめだ、レベルを見て閉じなければいけない。。。
+* u1
+## o2
+*** u3
+## o2-2
+#### o4
+
+[[test2]]
+[[test3]] no file
+[[test4]]
+
+[[test5]] [[test6]]
