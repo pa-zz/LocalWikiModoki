@@ -1,4 +1,4 @@
-// $Id: rule_redmine.js 35 2019-01-17 09:19:58Z sup-bug-yo-sasaki $
+// $Id: $
 
 function show(inputData){
   var objID=document.getElementById("layer_" + inputData);
