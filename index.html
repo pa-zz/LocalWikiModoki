@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<script>
+// 本体スクリプトのバージョン
+var version_script = "0.1test";
+</script>
+<script src="rule_redmine.js" type="text/javascript"></script>
+</head>
+<body>
+<script>
+function load_txt(path){
+  document.write(load_file(path));
+}
+
+function load_file(path)
+{
+  var xhr = null; 
+  try { xhr = new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) { xhr = new XMLHttpRequest(); }
+
+  try {
+    xhr.open("GET", path, false);
+    xhr.send();
+  } catch (e) {
+    return "<font color=red>*** No file. ***</font><br>";
+  }
+
+  var result = "";
+  result = format(xhr.responseText);
+
+  return result;
+}
+
+var path;
+
+if (location.search == ""){
+  path = "top.txt";
+}else{
+  path = location.search.replace("?", "");
+}
+
+// ヘッダ
+load_txt("head.txt");
+
+// コンテンツの表示
+load_txt(path);
+
+// フッタ
+load_txt("foot.txt");
+
+</script>
+</body>
+</html>
