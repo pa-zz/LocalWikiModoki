@@ -31,3 +31,9 @@ I want Redmine system especially Wiki system.
 So I made simple Wiki-like system with javascript.
 It is easy to setup.
 It doesn't use EXE or Server.
+
+
+# TODO
+
+To make "Table of contents".
+To fix Table behavior.
