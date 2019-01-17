@@ -5,3 +5,5 @@ Welcome to LocalWikiModoki. (Modoki means "pseudo")
 h2. Format
 
 [[help]]
+
+$Id$
