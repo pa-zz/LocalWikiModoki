@@ -1,4 +1,4 @@
-﻿h1. top
+﻿h1. LocalWikiModoki
 
 Welcome to LocalWikiModoki. (Modoki means "pseudo")
 
